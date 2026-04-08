@@ -12,14 +12,13 @@
         "@commitlint/types": "^20.5.0",
         "@types/bun": "latest",
         "turbo": "^2.8.20",
-        "typescript": "^5.9.3",
       },
     },
     "apps/my-app": {
       "name": "@repo/my-app",
       "devDependencies": {
         "@repo/typescript-config": "workspace:*",
-        "typescript": "^5.9.3",
+        "typescript": "catalog:",
       },
     },
     "packages/my-package": {
@@ -27,19 +26,22 @@
       "devDependencies": {
         "@repo/pack-utils": "workspace:*",
         "@repo/typescript-config": "workspace:*",
-        "typescript": "^5.9.3",
+        "typescript": "catalog:",
       },
     },
     "packages/pack-utils": {
       "name": "@repo/pack-utils",
       "devDependencies": {
         "@repo/typescript-config": "workspace:*",
-        "typescript": "^5.9.3",
+        "typescript": "catalog:",
       },
     },
     "packages/typescript-config": {
       "name": "@repo/typescript-config",
     },
+  },
+  "catalog": {
+    "typescript": "^5.9.3",
   },
   "packages": {
     "@babel/code-frame": ["@babel/code-frame@7.29.0", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.28.5", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw=="],

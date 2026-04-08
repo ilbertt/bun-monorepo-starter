@@ -9,7 +9,7 @@
   "devDependencies": {
     "@repo/pack-utils": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "typescript": "^5.9.3"
+    "typescript": "catalog:"
   },
   "imports": {
     "#*": "./src/*"
