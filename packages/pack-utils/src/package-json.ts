@@ -20,7 +20,8 @@ export async function setPackageJsonDependencies({
     },
   };
 
-  await Bun.write(targetPackageJsonPath, JSON.stringify(updatedTargetPackageJson, null, 2));
+  // Add trailing newline to make formatter happy
+  await Bun.write(targetPackageJsonPath, `${JSON.stringify(updatedTargetPackageJson, null, 2)}\n`);
 }
 
 function removeWorkspaceDependencies(
