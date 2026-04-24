@@ -12,6 +12,7 @@
         "@commitlint/types": "^20.5.0",
         "@types/bun": "latest",
         "turbo": "^2.9.5",
+        "typescript": "catalog:",
       },
     },
     "apps/my-app": {
