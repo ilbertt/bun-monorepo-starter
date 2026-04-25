@@ -31,9 +31,17 @@
           }
         }
       },
+      "suspicious": {
+        "useAwait": "error"
+      },
+      "nursery": {
+        "useAwaitThenable": "error",
+        "noFloatingPromises": "error"
+      },
       "style": {
         "noNonNullAssertion": "off",
-        "useBlockStatements": "error"
+        "useBlockStatements": "error",
+        "noMagicNumbers": "error"
       }
     }
   },
