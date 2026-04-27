@@ -31,6 +31,9 @@
           }
         }
       },
+      "performance": {
+        "noBarrelFile": "error"
+      },
       "suspicious": {
         "useAwait": "error"
       },
@@ -41,7 +44,8 @@
       "style": {
         "noNonNullAssertion": "off",
         "useBlockStatements": "error",
-        "noMagicNumbers": "error"
+        "noMagicNumbers": "error",
+        "noExportedImports": "error"
       }
     }
   },
