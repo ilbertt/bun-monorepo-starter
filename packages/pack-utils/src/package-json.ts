@@ -14,10 +14,7 @@ export async function setPackageJsonDependencies({
 
   const updatedTargetPackageJson = {
     ...targetPackageJson,
-    dependencies: {
-      ...targetPackageJson.dependencies,
-      ...removeWorkspaceDependencies(sourcePackageJson.dependencies || {}),
-    },
+    dependencies: removeWorkspaceDependencies(sourcePackageJson.dependencies || {}),
   };
 
   // Add trailing newline to make formatter happy
