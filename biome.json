@@ -45,7 +45,13 @@
         "noNonNullAssertion": "off",
         "useBlockStatements": "error",
         "noMagicNumbers": "error",
-        "noExportedImports": "error"
+        "noExportedImports": "error",
+        "useFilenamingConvention": {
+          "level": "off",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        }
       }
     }
   },
@@ -70,5 +76,17 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useFilenamingConvention": "error"
+          }
+        }
+      }
+    }
+  ]
 }
