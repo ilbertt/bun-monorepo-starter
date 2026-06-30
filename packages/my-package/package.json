@@ -2,6 +2,9 @@
   "name": "@repo/my-package",
   "private": true,
   "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
   "scripts": {
     "build": "bun run build.ts",
     "check:types": "bun run --bun tsc"
@@ -10,8 +13,5 @@
     "@repo/pack-utils": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "typescript": "catalog:"
-  },
-  "imports": {
-    "#*": "./src/*"
   }
 }

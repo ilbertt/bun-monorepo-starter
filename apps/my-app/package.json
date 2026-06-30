@@ -2,6 +2,9 @@
   "name": "@repo/my-app",
   "private": true,
   "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target bun",
     "check:types": "bun run --bun tsc"
@@ -9,8 +12,5 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "typescript": "catalog:"
-  },
-  "imports": {
-    "#*": "./src/*"
   }
 }

@@ -26,7 +26,7 @@ jobs:
 
       - uses: ./.github/actions/prepare
 
-      - name: Check JS Codestyle
+      - name: Check Codestyle
         run: bun check:codestyle
 
   checks-passed:
