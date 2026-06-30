@@ -25,6 +25,7 @@
     "typescript/await-thenable": "error",
     "typescript/no-floating-promises": "error",
     "typescript/no-non-null-assertion": "off",
+    "unicorn/prefer-export-from": "error",
     "unicorn/filename-case": "off"
   },
   "overrides": [
