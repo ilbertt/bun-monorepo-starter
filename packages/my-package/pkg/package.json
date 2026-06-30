@@ -1,7 +1,7 @@
 {
   "name": "@my-org/my-package",
-  "version": "0.0.26",
-  "description": "Send and receive messages from WhatsApp Business API",
+  "version": "0.0.0",
+  "description": "A publishable npm package",
   "license": "MIT",
   "author": "My Org <my-org@my-org.com>",
   "repository": {
