@@ -2,11 +2,11 @@
   "name": "@repo/pack-utils",
   "private": true,
   "type": "module",
-  "exports": {
-    ".": "./src/index.ts"
-  },
   "imports": {
     "#*": "./src/*"
+  },
+  "exports": {
+    ".": "./src/index.ts"
   },
   "scripts": {
     "check:types": "bun run --bun tsc"

@@ -13,7 +13,7 @@ bun add @my-org/my-package
 ## Usage
 
 ```ts
-import { } from '@my-org/my-package';
+import {} from '@my-org/my-package';
 ```
 
 ## License

@@ -40,6 +40,7 @@ bun run build
 
 - [Bun](https://bun.sh) — runtime, package manager, bundler
 - [Turborepo](https://turborepo.dev/) — task orchestration with caching
-- [Biome](https://biomejs.dev/) — linter and formatter
+- [oxlint](https://oxc.rs/docs/guide/usage/linter) — fast, type-aware linter
+- [oxfmt](https://oxc.rs/docs/guide/usage/formatter) — formatter (JS/TS, JSON, YAML, Markdown, CSS, and more)
 - [commitlint](https://commitlint.js.org/) — conventional commit enforcement
 - [TypeScript](https://www.typescriptlang.org/) — shared config via `@repo/typescript-config`

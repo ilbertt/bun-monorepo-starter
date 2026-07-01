@@ -6,7 +6,8 @@ Bun + TypeScript monorepo (`apps/*`, `packages/*`).
 
 - **Runtime:** Bun
 - **Monorepo:** Bun workspaces + Turbo
-- **Linter/Formatter:** Biome (auto-formats on save)
+- **Linter:** oxlint (type-aware enabled)
+- **Formatter:** oxfmt (auto-formats on save)
 - **Commits:** Conventional Commits (commitlint)
 
 ## Code style
@@ -14,8 +15,8 @@ Bun + TypeScript monorepo (`apps/*`, `packages/*`).
 - No comments that restate what types and naming already say — only comment the non-obvious
 - Imports use `#*` subpath mapping (e.g. `import { foo } from '#services/foo'`)
 - Single source of truth — never duplicate keys, enum values, or type info that belongs to a class/module; derive from the source instead
-- Biome enforces `useMaxParams: 1` — wrap multiple params in an object
-- Only re-export from index files - Biome enforces that
+- oxlint enforces `max-params: 1` — wrap multiple params in an object
+- Only re-export from index files (convention; oxlint's `oxc/no-barrel-file` only catches large `export *` barrels, not selective re-exports)
 
 ## Validation
 
