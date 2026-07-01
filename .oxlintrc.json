@@ -10,18 +10,8 @@
   "rules": {
     "max-params": ["error", { "max": 1 }],
     "curly": ["error", "all"],
-    "no-magic-numbers": [
-      "error",
-      {
-        "ignore": [-1, 0, 1, 2],
-        "ignoreDefaultValues": true,
-        "ignoreClassFieldInitialValues": true,
-        "ignoreArrayIndexes": true,
-        "ignoreEnums": true
-      }
-    ],
     "require-await": "error",
-    "oxc/no-barrel-file": "error",
+    "oxc/no-barrel-file": ["error", { "threshold": 0 }],
     "typescript/await-thenable": "error",
     "typescript/no-floating-promises": "error",
     "typescript/no-non-null-assertion": "off",
