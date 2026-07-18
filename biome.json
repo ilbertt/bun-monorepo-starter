@@ -35,7 +35,8 @@
         "noBarrelFile": "error"
       },
       "suspicious": {
-        "useAwait": "error"
+        "useAwait": "error",
+        "noDeprecatedImports": "error"
       },
       "nursery": {
         "useAwaitThenable": "error",
