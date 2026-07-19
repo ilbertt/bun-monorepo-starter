@@ -47,3 +47,6 @@ The root `README.md` is the project homepage: typically lists the public package
 ## Keeping this file up to date
 
 When a change affects code style, tooling, conventions, or project taste (new lint rules, formatter config, naming patterns, dependency choices, etc.), propose updating this file to reflect it.
+
+## Pull requests
+Keep PR descriptions minimal — the diff is self-explanatory, so don't enumerate every change. State the intent in a line or two.
